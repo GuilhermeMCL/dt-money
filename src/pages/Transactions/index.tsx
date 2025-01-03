@@ -1,40 +1,39 @@
+
 import { Header } from "../../components/header";
 import { Summary } from "../../components/Summary";
-import {
-  PriceHighLight,
-  TrasactionsContainer,
-  TrasactionsTable,
-} from "./styles";
+import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
 
-export function Trasactions() {
+export function Transactions() {
   return (
     <div>
       <Header />
       <Summary />
-
-      <TrasactionsContainer>
-        <TrasactionsTable>
+      <TransactionsContainer>
+        <TransactionsTable>
           <tbody>
             <tr>
-              <td width="50%">Desenvolvimento de Site</td>
-
+              <td width="50%">Desenvolvimento de site</td>
               <td>
-                <PriceHighLight variant="incone">R$ 12.000,00</PriceHighLight>
+                <PriceHighlight variant="income">
+                  R$ 12.000,00
+                </PriceHighlight>
               </td>
               <td>Venda</td>
-              <td>13/04/2024</td>
+              <td>13/04/2022</td>
             </tr>
             <tr>
-              <td width="50%">Comida</td>
+              <td width="50%">Hambúrguer</td>
               <td>
-                <PriceHighLight variant="outcone">- R$ 60,00</PriceHighLight>
+                <PriceHighlight variant="outcome">
+                  -R$ 59,00
+                </PriceHighlight>
               </td>
               <td>Alimentação</td>
-              <td>13/04/2024</td>
+              <td>10/04/2022</td>
             </tr>
           </tbody>
-        </TrasactionsTable>
-      </TrasactionsContainer>
+        </TransactionsTable>
+      </TransactionsContainer>
     </div>
   );
 }
